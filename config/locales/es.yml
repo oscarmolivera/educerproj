@@ -1,0 +1,12 @@
+es:
+  name_app: "SalonDeClase APP"
+  root_menu: "Inicio"
+  about: "Acerca de"
+  contact: "Contacto"
+  signin: "Registro"
+  login: "ingresar"
+  first_h1: "Implementando Ruby on Rails"
+  home_h3: "Una pequeña aplicación en RoR para validación de usuarios."
+  home_btn_gs: "Comienze aquí"
+  footer_text_1: "Proyecto final para"
+  footer_text_2: "certificación RoR."

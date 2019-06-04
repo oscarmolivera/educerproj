@@ -28,6 +28,7 @@ gem 'mini_magick'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'jquery-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
