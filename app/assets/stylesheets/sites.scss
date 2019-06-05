@@ -2,7 +2,7 @@ html {
   height: 100%;
 }
 
-body {
+body {  
   background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   background-size: cover;
   background-position: center;
@@ -10,10 +10,20 @@ body {
   color: white;
   background-attachment: fixed;
 }
-
+.icon-li{
+  margin: 5px 5px auto 5px;
+}
 #content {
   text-align: center;
   padding-top: 25%;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 
+               0 8px 13px rgba(0, 0, 0, 0.1),
+               0 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#page-title {
+  text-align: center;
+  padding-top: 5%;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 
                0 8px 13px rgba(0, 0, 0, 0.1),
                0 18px 23px rgba(0, 0, 0, 0.1);
@@ -29,6 +39,13 @@ hr {
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   max-width: 90%;
+}
+.container-blur{
+  background: #f8f8f8;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  height: 80vh;
 }
 
 footer {
@@ -47,8 +64,8 @@ float:right;
    color:#e64946;
 }
 
-@media (max-width: 399px){
-  .f-b-r{
+@media (max-width: 767px){
+  .f-b-r, .icon-li, .icon-li img, .brand-li, .brand-li > .navbar-brand{ 
     display: none;
   }
 }
