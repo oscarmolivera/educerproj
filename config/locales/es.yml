@@ -11,3 +11,25 @@ es:
   footer_text_1: "Proyecto final para"
   footer_text_2: "certificación RoR."
   txtOpc1: "Esta es la pagina donde se crearán los usuarios."
+  name: "Nombre:"
+  email: "Correo Electrónico:"
+  password: "Contraseña:"
+  password_confirmation: "Confirmación:"
+  createAcc: "Crear mi cuenta."
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "empty. Debe ingresar un nombre."
+            email:
+              blank: "no puede estar en blanco."
+              invalid: "incorrecto. Ingrese un correo válido"
+            password:
+              blank: "no puede estar en blanco!"
+              too_short: "Tiene que ser mayor a 7 caracters.  "
+            password_confirmation:
+              confirmation: "Contraseñas no coinciden."
+  welcome: "Ingreso exitoso!"
+  profile: "Perfil"

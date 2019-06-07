@@ -11,3 +11,22 @@ en:
   footer_text_1: "Final project for"
   footer_text_2: "rails certification."
   txtOpc1: "This is the page for the creation of users"
+  name: "Name:"
+  email: "Email:"
+  password: "Password:"
+  password_confirmation: "Confirmation:"
+  createAcc: "Create my account"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: "can't be empty!"
+              too_short: "has to be greater than 7 caracters"
+            password_confirmation:
+              confirmation: " doesn't match, please try again."
+  welcome: "Welcome"
+  profile: "Profile"
+  signup: "SignUp"
+              

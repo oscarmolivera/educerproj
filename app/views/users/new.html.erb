@@ -1,14 +1,30 @@
-<% provide(:title, "SignUp")%>
+<% provide(:title, t(:signin))%>
 <div class="container container-blur">
   <div class="row">
     <div class="col-lg-12">
       <div id="page-title">
         <h1><%= t(:signin) %></h1>
       </div>
-      <div class="container">
-        <p><%= t(:txtOpc1) %></p>
-      </div>  
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 new-form">
+          <%= form_for(@user) do |f| %>
+            <%= render 'shared/error_messages' %>
+            <%= f.label t(:name) %>
+            <%= f.text_field :name %>
+
+            <%= f.label t(:email)  %>
+            <%= f.email_field :email %>
+
+            <%= f.label t(:password) %>
+            <%= f.password_field :password %>
+
+            <%= f.label t(:password_confirmation)%>
+            <%= f.password_field :password_confirmation %>
+
+            <%= f.submit t(:createAcc), class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
