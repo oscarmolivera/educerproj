@@ -1,0 +1,26 @@
+<% provide(:title, t(:login))%>
+<div class="container container-blur">
+  <div class="row">
+    <div class="col-lg-12">
+      <div id="page-title">
+        <%= render 'shared/flashpop'%>
+        <h1><%= t(:login) %></h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 new-form">
+          <%= form_for(:session, url: login_path) do |f| %>
+            <%= f.label t(:email) %>
+            <%= f.email_field t(:email), class: 'form-control' %>
+
+            <%= f.label t(:password) %>
+            <%= f.password_field t(:password), class: 'form-control' %>
+
+            <%= f.submit t(:login_btn), class: "btn btn-primary" %>
+          <% end %>
+
+          <p><%= t(:nw_user)%> <%= link_to t(:signup_msg), signup_path %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

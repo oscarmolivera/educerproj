@@ -13,49 +13,49 @@
     
       <ul class="nav navbar-nav">
         <li class="icon-li"><%= image_tag 'browser.png', size: 36 %></li>
-        <li class="brand-li"><%= link_to root_path, class: 'navbar-brand'  do %>
+        <li>
+          <%= link_to root_path, class: 'navbar-brand'  do %>
             <%= t(:name_app)%>   
           <%end%>
-          </li>  
+        </li>  
       </ul>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to t(:root_menu), root_path %> </li>
+        <li class="<%= active?(root_path) %>"><%= link_to t(:root_menu), root_path %> </li>
         <li><%= link_to t(:about), root_path %></li>
         <li><%= link_to t(:contact), root_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <%= link_to signup_path  do %>
-            <%= t(:signin)%> 
-            <i class = "fas fa-user-plus"></i>
-          <%end%>        
-        </li>
-        <li>
-          <%= link_to root_path  do %>
-            <%= t(:login)%> 
-            <i class = "fas fa-user"></i>
-          <%end%>        
-        </li>
+        <% if logged_in? %>
+          <li class="<%= active?(current_user) %>">
+            <%= link_to current_user  do %>
+              <%= t(:profile)%> 
+              <i class = "far fa-user-circle"></i>
+            <%end%>        
+          </li>
+          <li class="<%= active?(logout_path) %>">
+            <%= link_to logout_path  do %>
+              <%= t(:logout)%> 
+              <i class = "fas fa-sign-out-alt"></i>
+            <%end%>        
+          </li>
+        <% else%>
+          <li class="<%= active?(signup_path) %>">
+            <%= link_to signup_path  do %>
+              <%= t(:signin)%> 
+              <i class = "fas fa-user-plus"></i>
+            <%end%>        
+          </li>
+          <li class="<%= active?(login_path) %>">
+            <%= link_to login_path  do %>
+              <%= t(:login)%> 
+              <i class = "fas fa-user"></i>
+            <%end%>        
+          </li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<script>
-$(function() {
-  
-  // elementos de la lista
-  var menues = $("li"); 
-
-  // manejador de click sobre todos los elementos
-  menues.click(function() {
-     // eliminamos active de todos los elementos
-     menues.removeClass("active");
-     // activamos el elemento clicado.
-     $(this).addClass("active");
-  });
-  //console.log(`${this}`)
-});
-</script>

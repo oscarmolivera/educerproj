@@ -4,7 +4,7 @@ es:
   about: "Acerca de"
   contact: "Contacto"
   signin: "Registro"
-  login: "ingresar"
+  login: "Ingreso"
   first_h1: "Implementando Ruby on Rails"
   home_h3: "Una pequeña aplicación en RoR para validación de usuarios."
   home_btn_gs: "Comienze aquí"
@@ -15,6 +15,7 @@ es:
   email: "Correo Electrónico:"
   password: "Contraseña:"
   password_confirmation: "Confirmación:"
+  login_btn: "Aceptar"
   createAcc: "Crear mi cuenta."
   activerecord:
     errors:
@@ -33,3 +34,6 @@ es:
               confirmation: "Contraseñas no coinciden."
   welcome: "Ingreso exitoso!"
   profile: "Perfil"
+  nw_user: "Nuevo usuario? "
+  signup_msg: "Registrate aquí!"
+              

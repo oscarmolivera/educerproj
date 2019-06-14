@@ -16,6 +16,7 @@ en:
   password: "Password:"
   password_confirmation: "Confirmation:"
   createAcc: "Create my account"
+  login_btn: "Accept"
   activerecord:
     errors:
       models:
@@ -29,4 +30,6 @@ en:
   welcome: "Welcome"
   profile: "Profile"
   signup: "SignUp"
+  nw_user: "New user? "
+  signup_msg: "Sign up Now!"
               
