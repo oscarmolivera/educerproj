@@ -17,6 +17,11 @@ en:
   password_confirmation: "Confirmation:"
   createAcc: "Create my account"
   login_btn: "Accept"
+  forgot: "(forgot password?)"
+  forgot_title: "Forgot password"
+  reset_title: "Reset your password"
+  forgot_btn: "Submit"
+  empty_pass: "can't be empty!"
   activerecord:
     errors:
       models:
@@ -32,4 +37,17 @@ en:
   signup: "SignUp"
   nw_user: "New user? "
   signup_msg: "Sign up Now!"
+  info_pr_flash: "Email sent with password reset instructions"
+  danger_pr_flash: "Email address not found"
+  user_mailer:
+    password_resets:
+      subject: 'Site Password Reset'
+      email_reset: "Password Reset"
+      greeting_pass_reset: 'Hello %{name},'
+      content_pass_reset: 'You have requested to reset your password. Please click on the following link to continue resetting your password: '
+      content2_pass_reset: 'If you did not initiate this request, please contact us immediately.'
+  confirm: 'Confirmation'
+  update: 'Update password'   
+
+
               

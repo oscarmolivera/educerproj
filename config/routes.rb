@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   
   root 'sites#home'
   resources :users
+  
+  resources :password_resets, only: %i[new edit create update]
 end

@@ -12,11 +12,16 @@ es:
   footer_text_2: "certificación RoR."
   txtOpc1: "Esta es la pagina donde se crearán los usuarios."
   name: "Nombre:"
-  email: "Correo Electrónico:"
+  email: "Correo Electronico:"
   password: "Contraseña:"
   password_confirmation: "Confirmación:"
   login_btn: "Aceptar"
   createAcc: "Crear mi cuenta."
+  forgot: "(olvidó su contraseña?)"
+  forgot_title: "Reinicio de Contraseña."
+  forgot_btn: "Enviar"
+  empty_pass: "No puede ser vacio."
+  success_pass: "Se ha realizado el cambio de contraseña."
   activerecord:
     errors:
       models:
@@ -36,4 +41,17 @@ es:
   profile: "Perfil"
   nw_user: "Nuevo usuario? "
   signup_msg: "Registrate aquí!"
+  info_pr_flash: "El correo ha sido enviado con instrucciones para reiniciar su contraseña."
+  danger_pr_flash: "Correo suministrado no existe."
+  reset_title: "Cambie su contraseña."
+  user_mailer:
+    password_resets:
+      subject: 'Restablecer su Contraseña'
+      greeting_pass_reset: 'Hola %{name},'
+      email_reset: "Reinicio de Contraseña"
+      content_pass_reset: 'Has solicitado el re-inicio de tu contraseña. Por favor has click en el enlace a continuación para realizar el cambio.'
+      content2_pass_reset: 'Si usted no realizó esta solicitud, responda a este correo con con el titulo VERIFICAR.'
+  confirm: 'Confirmacion'
+  update: 'Actualizar'   
+
               
