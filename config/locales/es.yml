@@ -19,17 +19,22 @@ es:
   createAcc: "Crear mi cuenta."
   forgot: "(olvidó su contraseña?)"
   forgot_title: "Reinicio de Contraseña."
-  forgot_btn: "Enviar"
+  forgot_btn: "Enviar"  
   empty_pass: "No puede ser vacio."
   success_pass: "Se ha realizado el cambio de contraseña."
+  user_update_error: "Ingresos no valido. Intente nuevamente"
+  user_update: "Perfil de usuario actualizado!"
+  invalid_user: "Datos de ingreso invalidos. Verifique sus datos e intente de nuevo."
   activerecord:
     errors:
       models:
         user:
           attributes:
-            name:
+            user: 
+              name: "Nombre"
+            name: 
               blank: "empty. Debe ingresar un nombre."
-            email:
+            email: 
               blank: "no puede estar en blanco."
               invalid: "incorrecto. Ingrese un correo válido"
             password:
@@ -37,6 +42,9 @@ es:
               too_short: "Tiene que ser mayor a 7 caracters.  "
             password_confirmation:
               confirmation: "Contraseñas no coinciden."
+    attributes:
+      user:
+        name: "Nombre"
   welcome: "Ingreso exitoso!"
   profile: "Perfil"
   nw_user: "Nuevo usuario? "

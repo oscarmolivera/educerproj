@@ -1,5 +1,7 @@
 class User < ApplicationRecord
   before_save {self.email = email.downcase}
+
+  has_one_attached :avatar
   attr_accessor :reset_token
 
   VALID_EMAIL_REGEX = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
@@ -14,7 +16,7 @@ class User < ApplicationRecord
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
-
+  
   def User.new_token
     SecureRandom.urlsafe_base64
   end

@@ -22,6 +22,9 @@ en:
   reset_title: "Reset your password"
   forgot_btn: "Submit"
   empty_pass: "can't be empty!"
+  user_update_error: "Invalid input. Please ry again"
+  user_update: "Profile new data updated!"
+  invalid_user: "Invalid email/password combination"
   activerecord:
     errors:
       models:
